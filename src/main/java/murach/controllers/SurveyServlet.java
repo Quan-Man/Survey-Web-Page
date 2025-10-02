@@ -1,6 +1,8 @@
 package murach.controllers;
 
 import java.io.IOException;
+import java.util.Date;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -56,6 +58,9 @@ public class SurveyServlet extends HttpServlet {
 
         // store User object in request
         request.setAttribute("user", user);
+        
+        Date currentDate = new Date();
+        request.setAttribute("currentDate", currentDate);
 
         // forward request to JSP
         String url = "/survey.jsp";

@@ -1,7 +1,7 @@
 FROM tomcat:9.0-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY WebPageForASurVey.war /usr/local/tomcat/webapps/ROOT.war
+COPY WebPageForASurvey.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose cổng 8080
 EXPOSE 8080

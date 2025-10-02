@@ -53,6 +53,7 @@
 	        </div>
 	
 	        <footer class="footer">
+	        	<p>This survey was added to our list on ${requestScope.currentDate}</p>
 	            <p>&copy; Copyright 23133042 Quan Gia Man</p>
 	        </footer>
 	    </div>
